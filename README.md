@@ -1,15 +1,3 @@
-Aquí tienes dos opciones para la descripción del repositorio de GitHub, basadas en el documento del examen.
-
----
-
-### Opción 1: Descripción Corta (Short description)
-
-App Android para la captura y análisis de encuestas de satisfacción de clientes en un cine. Utiliza SQLITE para el almacenamiento local de resultados y la visualización de estadísticas básicas.
-
----
-
-### Opción 2: Descripción Larga (Para el `README.md`)
-
 # Proyecto: Encuestas de Satisfacción de Cine (Android)
 
 Este repositorio contiene el código fuente para una aplicación Android diseñada para automatizar el proceso de encuestas de satisfacción y preferencia de clientes para un cine.

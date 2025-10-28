@@ -1,6 +1,8 @@
 package com.pw.satisfactionsurveyapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,21 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnStart = findViewById<Button>(R.id.btnStart)
+        btnStart.setOnClickListener {
+            val intento1 = Intent(this, SurveyActivity::class.java)
+            startActivity(intento1)
+        }
+
+        val btnEstadisticas = findViewById<Button>(R.id.btnEstadisticas)
+        btnEstadisticas.setOnClickListener {
+            val intento1 = Intent(this, AnalyticsActivity::class.java)
+            startActivity(intento1)
+        }
+
+
+
+
     }
 }

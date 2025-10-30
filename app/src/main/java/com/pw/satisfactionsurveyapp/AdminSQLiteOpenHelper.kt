@@ -4,14 +4,14 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class AdminSQliteOpenHelper(context: Context,
+class AdminSQLiteOpenHelper(context: Context,
                             name: String,
                             factory: SQLiteDatabase.CursorFactory?,
                             version: Int
 ) : SQLiteOpenHelper(context,name, factory, version) {
 
     override fun onCreate(db: SQLiteDatabase?) {
-        db?.execSQL("create table encuesta(pregunta1 int, preguna2 int, pregunta3 int, pregunta4 int, pregunta5 int)")
+        db?.execSQL("create table encuesta(id INT PRIMARY KEY AUTOINCREMENT, pregunta1 INT, preguna2 INT, pregunta3 INT, pregunta4 INT, pregunta5 INT)")
     }
 
     override fun onUpgrade(

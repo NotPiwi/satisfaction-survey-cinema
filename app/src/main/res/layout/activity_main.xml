@@ -37,7 +37,7 @@
         android:textSize="20sp"
         app:icon="@drawable/estadistica_icon"
         app:iconGravity="end"
-        app:iconSize="@android:dimen/config_shapeCornerRadiusXlarge"
+        app:iconSize="?attr/shapeCornerSizeExtraLargeIncreased"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnStart" />

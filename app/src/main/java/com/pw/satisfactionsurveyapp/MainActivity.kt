@@ -30,9 +30,5 @@ class MainActivity : AppCompatActivity() {
             val intento1 = Intent(this, AnalyticsActivity::class.java)
             startActivity(intento1)
         }
-
-
-
-
     }
 }

@@ -11,7 +11,7 @@ class AdminSQLiteOpenHelper(context: Context,
 ) : SQLiteOpenHelper(context,name, factory, version) {
 
     override fun onCreate(db: SQLiteDatabase?) {
-        db?.execSQL("create table encuesta(id INT PRIMARY KEY AUTOINCREMENT, pregunta1 INT, preguna2 INT, pregunta3 INT, pregunta4 INT, pregunta5 INT)")
+        db?.execSQL("create table encuesta(id INTEGER PRIMARY KEY AUTOINCREMENT, pregunta1 INTEGER, pregunta2 INTEGER, pregunta3 INTEGER, pregunta4 INTEGER, pregunta5 INTEGER)")
     }
 
     override fun onUpgrade(

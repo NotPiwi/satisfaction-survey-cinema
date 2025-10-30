@@ -8,12 +8,27 @@
     android:background="#F2ECE4"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/txtBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="57dp"
+        android:gravity="center"
+        android:text="Bienvend@, personal autorizado"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnStart"
-        android:layout_width="266dp"
+        android:layout_width="match_parent"
         android:layout_height="67dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="224dp"
         android:layout_marginEnd="75dp"
         android:backgroundTint="#D9043D"
         android:text="Nueva encuesta"
@@ -22,16 +37,17 @@
         app:iconGravity="end"
         app:iconSize="?attr/shapeCornerSizeExtraLargeIncreased"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnEstadisticas"
-        android:layout_width="261dp"
+        android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="75dp"
         android:backgroundTint="#D9043D"
         android:text="Ver estadisticas"
         android:textSize="20sp"
@@ -39,23 +55,9 @@
         app:iconGravity="end"
         app:iconSize="?attr/shapeCornerSizeExtraLargeIncreased"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnStart" />
-
-    <TextView
-        android:id="@+id/txtBienvenido"
-        android:layout_width="275dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="57dp"
-        android:gravity="center"
-        android:text="Bienvend@, personal autorizado"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgPcBG"

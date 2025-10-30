@@ -22,6 +22,7 @@ class SurveyActivity : AppCompatActivity() {
         }
 
         val btnEnviar = findViewById<Button>(R.id.brnEnviar)
+        val btnCancelar = findViewById<Button>(R.id.btnCancelar)
 
         val radioP1 = findViewById<RadioGroup>(R.id.radioP1)
         val radioP2 = findViewById<RadioGroup>(R.id.radioP2)
@@ -78,6 +79,9 @@ class SurveyActivity : AppCompatActivity() {
                 db.close()
                 finish()
             }
+        }
+        btnCancelar.setOnClickListener {
+            finish()
         }
     }
 }
